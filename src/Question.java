@@ -9,7 +9,6 @@ public class Question { // класс Вопрос.
     }
 
     public String present() {
-        //метод вывода на экран вопроса и вариантов ответов к нему
         StringBuilder builder = new StringBuilder();
         builder.append(textQuestion);
         builder.append("\n");
@@ -17,10 +16,10 @@ public class Question { // класс Вопрос.
             builder.append(answers[i]);
             builder.append("\n");
         }
-        return builder.toString();
+        return builder.toString();// вывод на экран вопроса и вариантов ответов к нему
     }
 
-    public boolean acceptAnswer(int index) {// метод возвращает истинность ответа
-        return answers[index].correct;
+    public boolean acceptAnswer(int indexQuestion) {// принимает истинность ответа
+        return answers[indexQuestion].isCorrect;
     }
 }

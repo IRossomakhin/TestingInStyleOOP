@@ -1,10 +1,10 @@
 public class Answer {
     public String textAnswer;
-    public boolean correct;
+    public boolean isCorrect;
 
     public Answer(String textAnswer, boolean correct) {
         this.textAnswer = textAnswer;
-        this.correct = correct;
+        this.isCorrect = correct;
     }
     public String toString() {
         return textAnswer;

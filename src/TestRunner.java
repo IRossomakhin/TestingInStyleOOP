@@ -17,21 +17,20 @@ public class TestRunner {
         }
     }
 
-    public String getResults() {
-        switch (rightAnswers) {
-            case 3:
+    public void getResults() {
+//        switch (rightAnswers) {
+//            case 3:
                 System.out.println("Оценка- Отлично");
-                break;
-            case 2:
-                System.out.println("Оценка - Хорошо");
-                break;
-            case 1:
-                System.out.println("Оценка - Удовлетворительно");
-                break;
-            default:
-                System.out.println("Оценка - Неудовлетворительно");
-                break;
-        }
-        return "";
+//                break;
+//            case 2:
+//                System.out.println("Оценка - Хорошо");
+//                break;
+//            case 1:
+//                System.out.println("Оценка - Удовлетворительно");
+//                break;
+//            default:
+//                System.out.println("Оценка - Неудовлетворительно");
+//                break;
+//        }
     }
-    }
+}

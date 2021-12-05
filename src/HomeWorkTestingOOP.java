@@ -37,7 +37,7 @@ public class HomeWorkTestingOOP {
             int answer = sc.nextInt() - 1;
             testRunner.acceptAnswer(i, answer);
         }
-        System.out.println(testRunner.getResults());
+        testRunner.getResults();
     }
 }
 

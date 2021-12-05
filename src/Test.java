@@ -5,13 +5,13 @@ public class Test {
         this.questions = questions;
     }
 
-    public Question getQuestion(int index) {
-        return questions[index];
+    public Question getQuestion(int indexQuestion) {
+        return questions[indexQuestion];
     }
 
-    public String presentQuestion(int index) {
-        if (index < questions.length) {
-            return questions[index].present();
+    public String presentQuestion(int indexQuestion) {
+        if (indexQuestion < questions.length) {
+            return questions[indexQuestion].present();
         } else {
             return null;
         }
