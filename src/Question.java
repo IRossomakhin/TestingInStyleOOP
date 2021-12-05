@@ -19,7 +19,7 @@ public class Question { // класс Вопрос.
         return builder.toString();// вывод на экран вопроса и вариантов ответов к нему
     }
 
-    public boolean acceptAnswer(int indexQuestion) {// принимает истинность ответа
-        return answers[indexQuestion].isCorrect;
+    public boolean isAnswerCorrect(int indexAnswer) {// принимает истинность ответа
+        return answers[indexAnswer].isCorrect;
     }
 }

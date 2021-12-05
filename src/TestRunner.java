@@ -12,25 +12,26 @@ public class TestRunner {
     }
 
     public void acceptAnswer(int questionIndex, int answerIndex) {
-        if (test.getQuestion(questionIndex).acceptAnswer(answerIndex)) {
+        Question currentQuestion = test.getQuestion(questionIndex);
+        if (currentQuestion.isAnswerCorrect(answerIndex)) {
             rightAnswers++;
         }
     }
 
     public void getResults() {
-//        switch (rightAnswers) {
-//            case 3:
+        switch (rightAnswers) {
+            case 3:
                 System.out.println("Оценка- Отлично");
-//                break;
-//            case 2:
-//                System.out.println("Оценка - Хорошо");
-//                break;
-//            case 1:
-//                System.out.println("Оценка - Удовлетворительно");
-//                break;
-//            default:
-//                System.out.println("Оценка - Неудовлетворительно");
-//                break;
-//        }
+                break;
+            case 2:
+                System.out.println("Оценка - Хорошо");
+                break;
+            case 1:
+                System.out.println("Оценка - Удовлетворительно");
+                break;
+            default:
+                System.out.println("Оценка - Неудовлетворительно");
+                break;
+        }
     }
 }
