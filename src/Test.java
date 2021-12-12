@@ -11,7 +11,7 @@ public class Test {
 
     public String presentQuestion(int indexQuestion) {
         if (indexQuestion < questions.length) {
-            return questions[indexQuestion].present();
+            return questions[indexQuestion].toString();
         } else {
             return null;
         }

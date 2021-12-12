@@ -8,7 +8,7 @@ public class Question { // класс Вопрос.
         this.answers = answers;
     }
 
-    public String present() {
+    public String toString() {
         StringBuilder builder = new StringBuilder();
         builder.append(textQuestion);
         builder.append("\n");
